@@ -1,6 +1,7 @@
-const express = require('express');
-const router = express.Router();
-const mongoose = require('mongoose');
+const express = require('express')
+const router = express.Router()
+const Book = require('../models/Book')
+const mongoose = require('mongoose')
 
 router.get('/seed', async (request, response) => {
 	// return a list of books in the database
@@ -43,16 +44,12 @@ router.delete('/delete/:id', async (request, response) => {
 
 router.post('/new', async (request, response) => {
 	try {
-		const newBook = await Book.create(request.body);
-		response.status(201).send(newBook);
+		const newBook = await Book.create(request.body)
+		response.status(201).send(newBook)
 	} catch (error) {
-		console.error(error);
-		response.status(500).send(Error);
-		
+		console.error(error)
+		response.status(500).send(Error)
 	}
 })
-
-
-
 
 module.exports = router
