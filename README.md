@@ -46,6 +46,7 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 02-27-2023 5:30pm - First get route created
 
 02-28-2023 3:15pm - Modularized code and added POST/DELETE
+02-28-2023 6:30pm - Cleaned up routes and required modules
 
 ## Estimates
 
