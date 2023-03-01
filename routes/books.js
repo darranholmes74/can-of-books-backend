@@ -53,4 +53,17 @@ router.post('/new', async (request, response) => {
 	}
 })
 
+router.put('/update/:id', async(request, response) => {
+	
+	try {
+		const updatedBook = await Book.findOneAndUpdate({title: request.params.id}, request.body, {new: true})
+		response.status(202).send(updatedBook)
+	} catch (error) {
+		console.log(`Error Updating ${error}`)
+		response
+			.status(500)
+			.send(`could not update a book called ${request.params.id}`)
+	}
+})
+
 module.exports = router
