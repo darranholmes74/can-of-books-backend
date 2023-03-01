@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Book = require('../models/Book')
 const mongoose = require('mongoose')
+const seed = require('../lib/seed')
 
 router.get('/seed', async (request, response) => {
 	// return a list of books in the database
