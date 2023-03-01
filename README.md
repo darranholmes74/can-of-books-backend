@@ -13,7 +13,7 @@ Clone this repo to your own account with the green "Use this template" button. T
 # Can of books
 
 _Authors_: Sheldon Pierce, Darran Holmes, Ethan Storm
-_Version_: 1.0.5 (increment the patch/fix version number if you make more commits past your first submission)
+_Version_: 1.0.6 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
